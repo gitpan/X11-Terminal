@@ -1,0 +1,14 @@
+--- #YAML:1.0
+name:                X11-Terminal
+version:             0.1
+abstract:            A programtic interface to launching X terminal windows
+license:             perl
+author:              
+    - Evan Giles <egiles@cpan.org>
+generated_by:        ExtUtils::MakeMaker version 6.42
+distribution_type:   module
+requires:     
+    Moose:                         0.54
+meta-spec:
+    url:     http://module-build.sourceforge.net/META-spec-v1.3.html
+    version: 1.3
