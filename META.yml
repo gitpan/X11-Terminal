@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:                X11-Terminal
-version:             0.1
+version:             0.2
 abstract:            A programtic interface to launching X terminal windows
 license:             perl
 author:              
