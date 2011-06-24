@@ -1,14 +1,35 @@
---- #YAML:1.0
-name:                X11-Terminal
-version:             0.3
-abstract:            A programtic interface to launching X terminal windows
-license:             perl
-author:              
-    - Evan Giles <egiles@cpan.org>
-generated_by:        ExtUtils::MakeMaker version 6.42
-distribution_type:   module
-requires:     
-    Moose:                         0.54
+---
+name: X11-Terminal
+version: 0.4
+author:
+  - 'Evan Giles <egiles@cpan.org>'
+abstract: Create customised X11 termnal windows
+license: perl
+requires:
+  Moose: 0.54
+  perl: v5.6.1
+configure_requires:
+  Module::Build: 0.340201
+generated_by: Module::Build version 0.340201
 meta-spec:
-    url:     http://module-build.sourceforge.net/META-spec-v1.3.html
-    version: 1.3
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+provides:
+  X11::Terminal:
+    file: lib/X11/Terminal.pm
+    version: 0.4
+  X11::Terminal::GnomeTerminal:
+    file: lib/X11/Terminal/GnomeTerminal.pm
+    version: 0.4
+  X11::Terminal::Konsole:
+    file: lib/X11/Terminal/Konsole.pm
+    version: 0.4
+  X11::Terminal::XTerm:
+    file: lib/X11/Terminal/XTerm.pm
+    version: 0.4
+resources:
+  license: http://dev.perl.org/licenses/
+  repository:
+    type: git
+    url: git://github.com/egiles/x11-terminal.git
+    web: http://github.com/egiles/x11-terminal

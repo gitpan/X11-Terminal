@@ -3,7 +3,8 @@ package X11::Terminal::GnomeTerminal;
 use Moose;
 extends 'X11::Terminal';
 
-our $VERSION = 0.3;
+our $VERSION = 0.4;
+
 =head1 NAME
 
 X11::Terminal::GnomeTerminal - Create customised gnome-terminal windows
@@ -106,7 +107,7 @@ L<X11::Terminal>
 
 =head1 COPYRIGHT
 
-Copyright 2010 Evan Giles.
+Copyright 2010-2011 Evan Giles.
 
 This module is free software; you can redistribute it and/or modify it
 under the same terms as Perl itself.
