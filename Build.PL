@@ -15,14 +15,11 @@ my $build = Module::Build->new (
         'Moose'           => 0.54,
      },
      create_makefile_pl => 'traditional',
+    configure_requires => { 'Module::Build' => 0.38 },
      meta_merge     => {
-       resources => {
-         repository => {
-           type => "git",
-           web => 'http://github.com/egiles/x11-terminal',
-           url => 'git://github.com/egiles/x11-terminal.git',
-         }
-       }
+         resources => {
+             repository => "http://github.com/egiles/x11-terminal",
+         },
      },
      add_to_cleanup => [ 'Makefile.PL', 'META.yml' ],
 );
